@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">MyKursach</string>
+    <string name="medName">Название лекарства</string>
+    <string name="addMed">Добавить</string>
+    <string name="manufacturerName">Производитель</string>
+    <string name="expirationDate">Срок годности</string>
+    <string name="compositionMed">Состав</string>
+    <string name="recommendationsForUse">Рекомендации по применению</string>
+    <string name="contraindicationsForUse">Противопоказания</string>
+    <string name="login">Логин</string>
+    <string name="register">Зарегистрироваться</string>
+    <string name="enterLogin">Введите логин</string>
+    <string name="enterReg">Введите пароль</string>
+    <string name="auth">Авторизация</string>
+    <string name="doneBy">©Иван Епишев</string>
+    <string name="password">Пароль</string>
+    <string name="usertype">Тип пользователя</string>
+    <string name="username">Имя пользователя</string>
+    <string name="createDate">Дата создания пользователя</string>
+    <string name="changePass">Сменить пароль</string>
+    <string name="enterNewPass">Введите новый пароль</string>
+    <string name="changePasswordQuestion">Изменить пароль?</string>
+    <string name="diseaseTag">Теги болезней</string>
+    <string name="find">Найти</string>
+    <string name="findMedByName">Найти лекарство по названию</string>
+    <string name="title_activity_medicament_find">MedicamentFind</string>
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="addNewMed">Добавить новое лекарство</string>
+    <string name="helperWithMeds">Помощник по болезням</string>
+    <string name="editMed">Редактировать</string>
+    <string name="delMed">Удалить</string>
+    <string name="edit">Редактировать</string>
+    <string name="addedBy">Кем добавлен в приложение</string>
+    <string name="whatsProblem">Что вас беспокоит?</string>
+    <string name="reference">Информационно-справочная система "Аптека"</string>
+    <string name="referenceMain">Информационно-справочная система Аптека</string>
+    <string name="referenceMainDown">PharmAdvisor</string>
+    <string name="referenceDesc">Эта программа поможет вам создавать базу данных лекарств с возможностью их изменения и удаления, также программа имеет удобный поиск по симптомам болезни. Имеется ролевая система user и admin, где user имеет право искать лекарства и просматривать их, а admin в дополнении к этому их редактировать и удалять.</string>
+    <string name="doneByRef">Сделано студентом ИКБО-11-20 Епишевым Иваном</string>
+    <string-array name="usertype">
+        <item>user</item>
+        <item>admin</item>
+    </string-array>
+</resources>

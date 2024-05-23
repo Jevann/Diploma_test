@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "693735460742",
+    "firebase_url": "https://pharmadvisorbd-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "pharmadvisorbd",
+    "storage_bucket": "pharmadvisorbd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:693735460742:android:a504fc2521c77c33866607",
+        "android_client_info": {
+          "package_name": "com.mirea.mykursach"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3m5XoRQc0FG631ymmd12A9fQcajq3SPk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,263 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/greenBack"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#009790"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteY="1dp" />
+
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="?attr/actionModeCloseDrawable"
+            tools:srcCompat="?attr/actionModeCloseDrawable"
+            tools:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="340dp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/profile"
+            tools:srcCompat="@drawable/user_profile_png_high_quality_image"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/medName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/medNameText"
+            app:layout_constraintTop_toBottomOf="@+id/enterMedName" />
+
+        <TextView
+            android:id="@+id/manufacturerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/medName"
+            app:layout_constraintTop_toBottomOf="@+id/medName" />
+
+        <TextView
+            android:id="@+id/expirationDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/manufacturerName"
+            app:layout_constraintTop_toBottomOf="@+id/manufacturerName" />
+
+        <TextView
+            android:id="@+id/compositionMed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/expirationDate"
+            app:layout_constraintTop_toBottomOf="@+id/expirationDate" />
+
+        <TextView
+            android:id="@+id/recommendationsForUse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/compositionMed"
+            app:layout_constraintTop_toBottomOf="@+id/compositionMed" />
+
+        <TextView
+            android:id="@+id/contraindicationsForUse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/recommendationsForUse"
+            app:layout_constraintTop_toBottomOf="@+id/recommendationsForUse" />
+
+        <TextView
+            android:id="@+id/addedBy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/contraindicationsForUse"
+            app:layout_constraintTop_toBottomOf="@+id/contraindicationsForUse" />
+
+        <Button
+            android:id="@+id/check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:text="Посмотреть"
+            app:layout_constraintStart_toStartOf="@+id/addedBy"
+            app:layout_constraintTop_toBottomOf="@+id/diseaseTag" />
+
+        <AutoCompleteTextView
+            android:id="@+id/enterMedName"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:completionThreshold="0"
+            android:hint="@string/medName"
+            android:maxLines="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/greenBack" />
+
+        <TextView
+            android:id="@+id/diseaseTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/addedBy"
+            app:layout_constraintTop_toBottomOf="@+id/addedBy" />
+
+        <Button
+            android:id="@+id/editMed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/editMed"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/check"
+            app:layout_constraintTop_toBottomOf="@+id/check" />
+
+        <Button
+            android:id="@+id/deleteMed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/delMed"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/editMed"
+            app:layout_constraintTop_toBottomOf="@+id/editMed" />
+
+        <TextView
+            android:id="@+id/medNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/medName"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/medName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/enterMedName"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/manufacturerNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/manufacturerName"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/manufacturerName"
+            app:layout_constraintStart_toStartOf="@+id/medName"
+            app:layout_constraintTop_toBottomOf="@+id/medName"
+            app:layout_constraintVertical_bias="0.142" />
+
+        <TextView
+            android:id="@+id/expirationDateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/expirationDate"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/expirationDate"
+            app:layout_constraintStart_toStartOf="@+id/manufacturerName"
+            app:layout_constraintTop_toBottomOf="@+id/manufacturerName"
+            app:layout_constraintVertical_bias="0.222" />
+
+        <TextView
+            android:id="@+id/compositionMedText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp"
+            android:text="@string/compositionMed"
+            app:layout_constraintBottom_toTopOf="@+id/compositionMed"
+            app:layout_constraintStart_toStartOf="@+id/expirationDate"
+            app:layout_constraintTop_toBottomOf="@+id/expirationDate"
+            app:layout_constraintVertical_bias="0.344" />
+
+        <TextView
+            android:id="@+id/recommendationsForUseText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="@string/recommendationsForUse"
+            app:layout_constraintBottom_toTopOf="@+id/recommendationsForUse"
+            app:layout_constraintStart_toStartOf="@+id/compositionMed"
+            app:layout_constraintTop_toBottomOf="@+id/compositionMed" />
+
+        <TextView
+            android:id="@+id/contraindicationsForUseText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="16sp"
+            android:text="@string/contraindicationsForUse"
+            app:layout_constraintBottom_toTopOf="@+id/contraindicationsForUse"
+            app:layout_constraintStart_toStartOf="@+id/recommendationsForUse"
+            app:layout_constraintTop_toBottomOf="@+id/recommendationsForUse"
+            app:layout_constraintVertical_bias="0.103" />
+
+        <TextView
+            android:id="@+id/addedByText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/addedBy"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/addedBy"
+            app:layout_constraintStart_toStartOf="@+id/contraindicationsForUse"
+            app:layout_constraintTop_toBottomOf="@+id/contraindicationsForUse" />
+
+        <TextView
+            android:id="@+id/diseaseTagText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/diseaseTag"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/diseaseTag"
+            app:layout_constraintStart_toStartOf="@+id/addedBy"
+            app:layout_constraintTop_toBottomOf="@+id/addedBy"
+            app:layout_constraintVertical_bias="0.36" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
